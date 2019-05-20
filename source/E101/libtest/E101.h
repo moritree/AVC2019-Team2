@@ -11,7 +11,7 @@ int close_screen_stream();
 int update_screen();
 int display_picture(int delay_sec,int delay_usec);
 int set_motor(int motor,int speed);
-int sleep1(int msec);
+int sleep1(int sec, int usec);
 int select_IO(int chan, int direct);
 int write_digital(int chan,char level);
 int read_digital(int chan);

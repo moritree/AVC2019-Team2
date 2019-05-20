@@ -2,7 +2,9 @@
 // Created by Zuni Preece on 2019-05-20.
 //
 
+#include <iostream>
 #include <stdio.h>
+#include <fstream>
 #include "E101.h"
 #include "readCamera.cpp"
 

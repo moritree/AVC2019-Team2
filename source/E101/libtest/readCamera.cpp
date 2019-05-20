@@ -2,12 +2,12 @@
 // Created by Zuni Preece on 2019-05-13.
 //
 
-#include <stdio.h>
 #include <iostream>
+#include <stdio.h>
+#include <fstream>
 #include <sys/time.h>
 #include <cassert>
 #include "E101.h"
-
 
 using namespace std;
 
