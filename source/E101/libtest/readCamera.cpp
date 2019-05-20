@@ -83,7 +83,8 @@ int main() {
 	readCamera cam;
 	double picture[320] = {0};
 	cam.pixels_from_cam(3, picture);
-	cam.get_error(picture);
-	printf("Err: %d", err);
+	double error = cam.get_error(picture);
+	printf("ERROR: %f\n", error);
+	printf("end Err: %d\n", err);
 }
 
