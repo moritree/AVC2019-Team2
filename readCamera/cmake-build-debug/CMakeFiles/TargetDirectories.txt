@@ -1,3 +1,0 @@
-/Users/zuni/Documents/AVC/AVC2019-Team2/readCamera/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/zuni/Documents/AVC/AVC2019-Team2/readCamera/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/zuni/Documents/AVC/AVC2019-Team2/readCamera/cmake-build-debug/CMakeFiles/readCamera.dir
