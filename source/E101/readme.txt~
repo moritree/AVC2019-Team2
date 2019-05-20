@@ -1,0 +1,7 @@
+Hello,
+1. "LibE101" folder contains library project. Do not delete it in case you will want to make some changes to the library.
+2. Copy of"libE101.so" file (the actual library file) should also be placed into /usr/lib folder. You need sudo priviliges to to that.
+
+3. "LibTest" folder contains testing program. You can use to check all the hardware. We recommend that you use command line and makefile provided. For details see "readme.txt" in "libtest" folder.
+
+Good luck.
