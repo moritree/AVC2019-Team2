@@ -16,6 +16,7 @@ public:
 
     int WIDTH = 320;
     int HEIGHT = 240;
+    readCamera(){};
     
 	/**
      * Gives the error, between between -1 (full left) and
@@ -74,3 +75,15 @@ private:
     double prevError = 0;
     struct timeval prevTime;
 };
+
+int main() {
+	int err = init();
+	open_screen_stream();
+	
+	readCamera cam;
+	double picture[320] = {0};
+	cam.pixels_from_cam(3, picture);
+	cam.get_error(picture);
+	printf("Err: %d", err);
+}
+

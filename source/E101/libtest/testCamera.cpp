@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <fstream>
 #include "E101.h"
-#include "readCamera.cpp"
+
 
 int main() {
 	int err = init();
