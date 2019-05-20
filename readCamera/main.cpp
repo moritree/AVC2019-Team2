@@ -74,7 +74,7 @@ public:
     }
 
 private:
-    
+    // Fields for derivative
     double prevError = 0;
     struct timeval prevTime;
 };
