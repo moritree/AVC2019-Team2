@@ -24,23 +24,23 @@ cassert
 readCamera.h
 ../include/readCamera.h
 
-/Users/zuni/Documents/AVC/try2/E101/libtest/E101.h
+/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/E101/libtest/E101.h
 
-/Users/zuni/Documents/AVC/try2/src/readCamera.cpp
+/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/readCamera.cpp
 readCamera.h
-/Users/zuni/Documents/AVC/try2/src/readCamera.h
+/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/readCamera.h
 ../E101/libtest/E101.h
-/Users/zuni/Documents/AVC/try2/E101/libtest/E101.h
+/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/E101/libtest/E101.h
 
-/Users/zuni/Documents/AVC/try2/src/runTests.cpp
+/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/runTests.cpp
 iostream
 -
 testCamera.h
-/Users/zuni/Documents/AVC/try2/src/testCamera.h
+/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/testCamera.h
 
-/Users/zuni/Documents/AVC/try2/src/testCamera.cpp
+/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/testCamera.cpp
 testCamera.h
-/Users/zuni/Documents/AVC/try2/src/testCamera.h
+/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/testCamera.h
 unistd.h
 -
 thread

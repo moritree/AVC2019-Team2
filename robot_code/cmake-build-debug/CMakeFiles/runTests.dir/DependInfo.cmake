@@ -4,16 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zuni/Documents/AVC/try2/src/readCamera.cpp" "/Users/zuni/Documents/AVC/try2/cmake-build-debug/CMakeFiles/runTests.dir/src/readCamera.cpp.o"
-  "/Users/zuni/Documents/AVC/try2/src/runTests.cpp" "/Users/zuni/Documents/AVC/try2/cmake-build-debug/CMakeFiles/runTests.dir/src/runTests.cpp.o"
-  "/Users/zuni/Documents/AVC/try2/src/testCamera.cpp" "/Users/zuni/Documents/AVC/try2/cmake-build-debug/CMakeFiles/runTests.dir/src/testCamera.cpp.o"
+  "/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/runTests.cpp" "/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/CMakeFiles/runTests.dir/runTests.cpp.o"
+  "/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/readCamera.cpp" "/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/CMakeFiles/runTests.dir/src/readCamera.cpp.o"
+  "/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/testCamera.cpp" "/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/CMakeFiles/runTests.dir/src/testCamera.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
-  "../E101"
+  "../E101/libtest"
   )
 
 # Targets to which this target links.

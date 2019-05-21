@@ -43,10 +43,10 @@ RM = "/Users/zuni/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zuni/Documents/AVC/try2
+CMAKE_SOURCE_DIR = /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zuni/Documents/AVC/try2/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/runTests.dir/depend.make
@@ -57,60 +57,60 @@ include CMakeFiles/runTests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/runTests.dir/flags.make
 
+CMakeFiles/runTests.dir/runTests.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/runTests.cpp.o: ../runTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/runTests.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/runTests.cpp.o -c /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/runTests.cpp
+
+CMakeFiles/runTests.dir/runTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/runTests.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/runTests.cpp > CMakeFiles/runTests.dir/runTests.cpp.i
+
+CMakeFiles/runTests.dir/runTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/runTests.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/runTests.cpp -o CMakeFiles/runTests.dir/runTests.cpp.s
+
 CMakeFiles/runTests.dir/src/readCamera.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/src/readCamera.cpp.o: ../src/readCamera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zuni/Documents/AVC/try2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/src/readCamera.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/src/readCamera.cpp.o -c /Users/zuni/Documents/AVC/try2/src/readCamera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runTests.dir/src/readCamera.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/src/readCamera.cpp.o -c /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/readCamera.cpp
 
 CMakeFiles/runTests.dir/src/readCamera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/src/readCamera.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zuni/Documents/AVC/try2/src/readCamera.cpp > CMakeFiles/runTests.dir/src/readCamera.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/readCamera.cpp > CMakeFiles/runTests.dir/src/readCamera.cpp.i
 
 CMakeFiles/runTests.dir/src/readCamera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/src/readCamera.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zuni/Documents/AVC/try2/src/readCamera.cpp -o CMakeFiles/runTests.dir/src/readCamera.cpp.s
-
-CMakeFiles/runTests.dir/src/runTests.cpp.o: CMakeFiles/runTests.dir/flags.make
-CMakeFiles/runTests.dir/src/runTests.cpp.o: ../src/runTests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zuni/Documents/AVC/try2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runTests.dir/src/runTests.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/src/runTests.cpp.o -c /Users/zuni/Documents/AVC/try2/src/runTests.cpp
-
-CMakeFiles/runTests.dir/src/runTests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/src/runTests.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zuni/Documents/AVC/try2/src/runTests.cpp > CMakeFiles/runTests.dir/src/runTests.cpp.i
-
-CMakeFiles/runTests.dir/src/runTests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/src/runTests.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zuni/Documents/AVC/try2/src/runTests.cpp -o CMakeFiles/runTests.dir/src/runTests.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/readCamera.cpp -o CMakeFiles/runTests.dir/src/readCamera.cpp.s
 
 CMakeFiles/runTests.dir/src/testCamera.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/src/testCamera.cpp.o: ../src/testCamera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zuni/Documents/AVC/try2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runTests.dir/src/testCamera.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/src/testCamera.cpp.o -c /Users/zuni/Documents/AVC/try2/src/testCamera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runTests.dir/src/testCamera.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/src/testCamera.cpp.o -c /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/testCamera.cpp
 
 CMakeFiles/runTests.dir/src/testCamera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/src/testCamera.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zuni/Documents/AVC/try2/src/testCamera.cpp > CMakeFiles/runTests.dir/src/testCamera.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/testCamera.cpp > CMakeFiles/runTests.dir/src/testCamera.cpp.i
 
 CMakeFiles/runTests.dir/src/testCamera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/src/testCamera.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zuni/Documents/AVC/try2/src/testCamera.cpp -o CMakeFiles/runTests.dir/src/testCamera.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/testCamera.cpp -o CMakeFiles/runTests.dir/src/testCamera.cpp.s
 
 # Object files for target runTests
 runTests_OBJECTS = \
+"CMakeFiles/runTests.dir/runTests.cpp.o" \
 "CMakeFiles/runTests.dir/src/readCamera.cpp.o" \
-"CMakeFiles/runTests.dir/src/runTests.cpp.o" \
 "CMakeFiles/runTests.dir/src/testCamera.cpp.o"
 
 # External object files for target runTests
 runTests_EXTERNAL_OBJECTS =
 
+runTests: CMakeFiles/runTests.dir/runTests.cpp.o
 runTests: CMakeFiles/runTests.dir/src/readCamera.cpp.o
-runTests: CMakeFiles/runTests.dir/src/runTests.cpp.o
 runTests: CMakeFiles/runTests.dir/src/testCamera.cpp.o
 runTests: CMakeFiles/runTests.dir/build.make
 runTests: CMakeFiles/runTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zuni/Documents/AVC/try2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable runTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable runTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/runTests.dir/clean:
 .PHONY : CMakeFiles/runTests.dir/clean
 
 CMakeFiles/runTests.dir/depend:
-	cd /Users/zuni/Documents/AVC/try2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zuni/Documents/AVC/try2 /Users/zuni/Documents/AVC/try2 /Users/zuni/Documents/AVC/try2/cmake-build-debug /Users/zuni/Documents/AVC/try2/cmake-build-debug /Users/zuni/Documents/AVC/try2/cmake-build-debug/CMakeFiles/runTests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/CMakeFiles/runTests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/runTests.dir/depend
 

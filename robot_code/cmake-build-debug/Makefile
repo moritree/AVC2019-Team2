@@ -48,10 +48,10 @@ RM = "/Users/zuni/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zuni/Documents/AVC/try2
+CMAKE_SOURCE_DIR = /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zuni/Documents/AVC/try2/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zuni/Documents/AVC/try2/cmake-build-debug/CMakeFiles /Users/zuni/Documents/AVC/try2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/CMakeFiles /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zuni/Documents/AVC/try2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ runTests/fast:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
 .PHONY : runTests/fast
 
+runTests.o: runTests.cpp.o
+
+.PHONY : runTests.o
+
+# target to build an object file
+runTests.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/runTests.cpp.o
+.PHONY : runTests.cpp.o
+
+runTests.i: runTests.cpp.i
+
+.PHONY : runTests.i
+
+# target to preprocess a source file
+runTests.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/runTests.cpp.i
+.PHONY : runTests.cpp.i
+
+runTests.s: runTests.cpp.s
+
+.PHONY : runTests.s
+
+# target to generate assembly for a file
+runTests.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/runTests.cpp.s
+.PHONY : runTests.cpp.s
+
 src/readCamera.o: src/readCamera.cpp.o
 
 .PHONY : src/readCamera.o
@@ -149,33 +176,6 @@ src/readCamera.s: src/readCamera.cpp.s
 src/readCamera.cpp.s:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/readCamera.cpp.s
 .PHONY : src/readCamera.cpp.s
-
-src/runTests.o: src/runTests.cpp.o
-
-.PHONY : src/runTests.o
-
-# target to build an object file
-src/runTests.cpp.o:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/runTests.cpp.o
-.PHONY : src/runTests.cpp.o
-
-src/runTests.i: src/runTests.cpp.i
-
-.PHONY : src/runTests.i
-
-# target to preprocess a source file
-src/runTests.cpp.i:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/runTests.cpp.i
-.PHONY : src/runTests.cpp.i
-
-src/runTests.s: src/runTests.cpp.s
-
-.PHONY : src/runTests.s
-
-# target to generate assembly for a file
-src/runTests.cpp.s:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/runTests.cpp.s
-.PHONY : src/runTests.cpp.s
 
 src/testCamera.o: src/testCamera.cpp.o
 
@@ -213,12 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... runTests"
+	@echo "... runTests.o"
+	@echo "... runTests.i"
+	@echo "... runTests.s"
 	@echo "... src/readCamera.o"
 	@echo "... src/readCamera.i"
 	@echo "... src/readCamera.s"
-	@echo "... src/runTests.o"
-	@echo "... src/runTests.i"
-	@echo "... src/runTests.s"
 	@echo "... src/testCamera.o"
 	@echo "... src/testCamera.i"
 	@echo "... src/testCamera.s"
