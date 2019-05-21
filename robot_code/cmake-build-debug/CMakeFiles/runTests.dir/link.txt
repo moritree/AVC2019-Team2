@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/runTests.dir/src/readCamera.cpp.o CMakeFiles/runTests.dir/src/runTests.cpp.o CMakeFiles/runTests.dir/src/testCamera.cpp.o  -o runTests 
