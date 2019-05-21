@@ -15,7 +15,7 @@
 using namespace std;
 
 /**
- * This class interperets data from the Pi's camera and gives
+ * This class interprets data from the Raspberry Pi's camera and gives
  * information we can use to inform our movement decisions.
  */
 class readCamera{
@@ -24,20 +24,31 @@ public:
     explicit readCamera();
 
     /**
-     * Gives the error of a specific colour channel.
-     * @param channel R (0), G (1), B (2), or all (3)
-     * @return error sum between -1 and 1
+     * Gives the error e of a specific colour channel, where e=0
+     * when the image is horizontally symmetrical.
+     * @param picture array of CAM_WIDTH
+     * @return e sum between -1 and 1
      */
     double getError(double* picture);
 
     /**
-     * Fills array from the camera for the get_error function
-     * Average of the chosen channel in each column, but
-     *  restricted to a range between 0 and 1.
+     * Writes from camera input into 1-dimensional array for finding the error values.
+     * Each index contains, restricted to a range of 0 to 1, the average value of:
+     *  - For R/G/B channels: The ratio of this channel to the total whiteness
+     *  - For the whiteness channel: Unprocessed value
      * @param channel R (0), G (1), B (2), or all (3)
+     * @param array Array to write into
      */
     void pixelsFromCamera(int channel, double *array);
-    double getDerivative(double errror);
+
+    /**
+     * Gets the time derivative of the error. Automatically keeps track of previous
+     * error and time in private fields, so the only parameter is the error which has
+     * just been calculated.
+     * @param error Sum at this time
+     * @return Time derivative of e, de/dt
+     */
+    double getDerivative(double error);
 private:
     double prevError;
     struct timeval thisTime, prevTime;

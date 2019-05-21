@@ -24,7 +24,14 @@ public:
      */
     void generateTestArray(double *array, int offset, int width);
 
+    /**
+     * Test the getError function on readCamera
+     */
     void getError_test();
+
+    /**
+     * Test the getDerivative function on readCamera
+     */
     void getDerivative_test();
 private:
     string result;
