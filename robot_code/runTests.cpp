@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "testCamera.h"
+#include "drive.h"
 
 int main() {
     testCamera test_cam;

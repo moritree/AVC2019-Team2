@@ -2,8 +2,8 @@
 // Created by Zuni Preece on 2019-05-21.
 //
 
-#ifndef TRY2_READCAMERA_H
-#define TRY2_READCAMERA_H
+#ifndef TRY2_READ_CAMERA_H
+#define TRY2_READ_CAMERA_H
 
 #include <stdio.h>
 #include <string>
@@ -54,4 +54,4 @@ private:
     struct timeval thisTime, prevTime;
 };
 
-#endif //TRY2_READCAMERA_H
+#endif //TRY2_READ_CAMERA_H

@@ -150,6 +150,33 @@ runTests.cpp.s:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/runTests.cpp.s
 .PHONY : runTests.cpp.s
 
+src/drive.o: src/drive.cpp.o
+
+.PHONY : src/drive.o
+
+# target to build an object file
+src/drive.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/drive.cpp.o
+.PHONY : src/drive.cpp.o
+
+src/drive.i: src/drive.cpp.i
+
+.PHONY : src/drive.i
+
+# target to preprocess a source file
+src/drive.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/drive.cpp.i
+.PHONY : src/drive.cpp.i
+
+src/drive.s: src/drive.cpp.s
+
+.PHONY : src/drive.s
+
+# target to generate assembly for a file
+src/drive.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/drive.cpp.s
+.PHONY : src/drive.cpp.s
+
 src/readCamera.o: src/readCamera.cpp.o
 
 .PHONY : src/readCamera.o
@@ -216,6 +243,9 @@ help:
 	@echo "... runTests.o"
 	@echo "... runTests.i"
 	@echo "... runTests.s"
+	@echo "... src/drive.o"
+	@echo "... src/drive.i"
+	@echo "... src/drive.s"
 	@echo "... src/readCamera.o"
 	@echo "... src/readCamera.i"
 	@echo "... src/readCamera.s"

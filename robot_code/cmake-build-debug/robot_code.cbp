@@ -89,6 +89,9 @@
 		<Unit filename="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/runTests.cpp">
 			<Option target="runTests"/>
 		</Unit>
+		<Unit filename="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/drive.cpp">
+			<Option target="runTests"/>
+		</Unit>
 		<Unit filename="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/readCamera.cpp">
 			<Option target="runTests"/>
 		</Unit>
