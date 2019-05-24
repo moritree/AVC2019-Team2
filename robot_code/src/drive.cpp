@@ -1,10 +1,10 @@
-#include "drive.h"
+#include "../include/drive.h"
 
 #include <stdio.h>
 #include <cstdlib>
 #include <thread>
 #include <chrono>
-#include "E101.h"
+#include "../E101/libtest/E101.h"
 
 drive::drive() {
     zero_speed = 48;

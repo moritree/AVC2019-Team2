@@ -2,9 +2,9 @@
 // Created by Zuni Preece on 2019-05-23.
 //
 
-#include "robot.h"
-#include "readCamera.h"
-#include "drive.h"
+#include "../include/robot.h"
+#include "../include/readCamera.h"
+#include "../include/drive.h"
 
 robot::robot(readCamera rc, class drive dr) {
     camera = rc;

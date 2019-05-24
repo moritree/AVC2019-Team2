@@ -2,7 +2,7 @@
 // Created by Zuni Preece on 2019-05-21.
 //
 
-#include "testCamera.h"
+#include "../include/testCamera.h"
 #include <unistd.h>
 #include <thread>
 

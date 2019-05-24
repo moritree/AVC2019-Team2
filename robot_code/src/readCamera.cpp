@@ -2,8 +2,8 @@
 // Created by Zuni Preece on 2019-05-21.
 //
 
-#include "readCamera.h"
-#include "E101.h"
+#include "../include/readCamera.h"
+#include "../include/E101.h"
 
 readCamera::readCamera() {
     prevError = 0.0;
