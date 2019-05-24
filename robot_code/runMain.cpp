@@ -268,7 +268,7 @@ int main() {
     drive dr;
     robot rb(rc, dr);
 
-    rb.quadrant1();
+    open_screen_stream();
     rb.quadrant2();
     return 0;
 }
