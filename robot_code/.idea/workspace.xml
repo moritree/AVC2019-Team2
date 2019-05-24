@@ -82,9 +82,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/runMain.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="-340">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding>
+                <element signature="e#48#67#0" expanded="true" />
                 <element signature="e#3885#5199#1" />
                 <element signature="e#155#886#1" />
               </folding>
@@ -240,12 +241,12 @@
       <workItem from="1558404714667" duration="4301000" />
       <workItem from="1558410117225" duration="87000" />
       <workItem from="1558410254784" duration="14423000" />
-      <workItem from="1558661491353" duration="6035000" />
+      <workItem from="1558661491353" duration="6093000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24846000" />
+    <option name="totallyTimeSpent" value="24904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -390,9 +391,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/runMain.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="-340">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding>
+            <element signature="e#48#67#0" expanded="true" />
             <element signature="e#3885#5199#1" />
             <element signature="e#155#886#1" />
           </folding>
