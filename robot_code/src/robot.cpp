@@ -7,8 +7,8 @@
 #include "../include/drive.h"
 
 robot::robot(readCamera rc, class drive dr) {
-    camera = rc;
-    drive = dr;
+    cam = rc;
+    dri = dr;
 
     // TODO optimise values of Kp and Kd
     // Start with Kp, increase slowly from 0 until robot starts swinging
@@ -24,9 +24,9 @@ void robot::quadrant2() {
     int count = 0;
 
     // Initialise error and derivative (so frame 1 derivative is correct)
-    double array[camera.CAM_WIDTH];
-    camera.simplePixelsFromCamera(3, array, 120);
-    camera.getDerivative(camera.getError(array));
+    double array[cam.CAM_WIDTH];
+    cam.simplePixelsFromCamera(3, array, 120);
+    cam.getDerivative(cam.getError(array));
 
     while (run) {
         followLine();
@@ -42,11 +42,11 @@ void robot::quadrant4() {}
 
 void robot::followLine() {
     // Get current error and derivative
-    double array[camera.CAM_WIDTH];
-    camera.simplePixelsFromCamera(3, array, 120);
-    double error = camera.getError(array);
-    double derivative = camera.getDerivative(error);
+    double array[cam.CAM_WIDTH];
+    cam.simplePixelsFromCamera(3, array, 120);
+    double error = cam.getError(array);
+    double derivative = cam.getDerivative(error);
 
     // Continuously move forwards, and turn according to proportional formula
-    drive.turn(int(Kp * error + Kd * derivative), 5);
+    dri.turn(int(Kp * error + Kd * derivative), 5);
 }

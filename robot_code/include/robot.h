@@ -38,7 +38,7 @@ public:
 
 private:
     readCamera cam;
-    drive dr;
+    drive dri;
     float Kp, Kd;  // Coefficients
 
     /**

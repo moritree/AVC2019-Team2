@@ -13,7 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fddfe06e-f1ad-4896-9471-39fe4d51895e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/readCamera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/readCamera.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/robot.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/robot.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,20 +53,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/robot.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+            <state relative-caret-position="528">
+              <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+              <folding>
+                <element signature="e#48#66#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
+        <entry file="file://$PROJECT_DIR$/include/robot.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2444">
-              <caret line="342" lean-forward="true" selection-start-line="342" selection-end-line="342" />
+            <state relative-caret-position="498">
+              <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+              <folding>
+                <element signature="e#103#121#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runMain.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="e#48#67#0" expanded="true" />
               </folding>
@@ -141,16 +148,16 @@
         <option value="$PROJECT_DIR$/include/testCamera.h" />
         <option value="$PROJECT_DIR$/runTests.cpp" />
         <option value="$PROJECT_DIR$/exec/runMain.cpp" />
-        <option value="$PROJECT_DIR$/include/robot.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/drive.h" />
         <option value="$PROJECT_DIR$/include/readCamera.h" />
         <option value="$PROJECT_DIR$/cmake-build-debug/Makefile" />
         <option value="$PROJECT_DIR$/src/drive.cpp" />
-        <option value="$PROJECT_DIR$/src/robot.cpp" />
         <option value="$PROJECT_DIR$/src/testCamera.cpp" />
-        <option value="$PROJECT_DIR$/runMain.cpp" />
         <option value="$PROJECT_DIR$/src/readCamera.cpp" />
+        <option value="$PROJECT_DIR$/runMain.cpp" />
+        <option value="$PROJECT_DIR$/include/robot.h" />
+        <option value="$PROJECT_DIR$/src/robot.cpp" />
       </list>
     </option>
   </component>
@@ -249,12 +256,12 @@
       <workItem from="1558404714667" duration="4301000" />
       <workItem from="1558410117225" duration="87000" />
       <workItem from="1558410254784" duration="14423000" />
-      <workItem from="1558661491353" duration="4958000" />
+      <workItem from="1558661491353" duration="5195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23769000" />
+    <option name="totallyTimeSpent" value="24006000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -294,16 +301,6 @@
           <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#48#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/robot.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#103#121#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -353,13 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/robot.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/readCamera.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -367,6 +357,13 @@
           <folding>
             <element signature="e#103#121#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/testCamera.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -381,19 +378,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/testCamera.h">
+    <entry file="file://$PROJECT_DIR$/runMain.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="180">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#48#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runMain.cpp">
+    <entry file="file://$PROJECT_DIR$/include/robot.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="498">
+          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
           <folding>
-            <element signature="e#48#67#0" expanded="true" />
+            <element signature="e#103#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/robot.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding>
+            <element signature="e#48#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
