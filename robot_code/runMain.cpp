@@ -7,82 +7,10 @@
 #include <cstdlib>
 #include <thread>
 #include <chrono>
-#include "../E101/libtest/E101.h"
+#include "E101/libtest/E101.h"
 #include "include/drive.h"
 
 using namespace std;
-
-class robot {
-public:
-    explicit robot(readCamera rc, drive dr) {
-        cam = rc;
-        dri = dr;
-
-        // TODO optimise values of Kp and Kd
-        // Start with Kp, increase slowly from 0 until robot starts swinging
-        // Then increase Kd until movement is smooth
-        Kp = 0;
-        Kd = 0;
-    }
-
-    /**
-     * Quadrant 1
-     * Open the gate by exchange with the server over WiFi
-     */
-    void quadrant1() {}
-
-    /**
-     * Quadrant 2
-     * Follow smooth wiggly line
-     */
-    void quadrant2() {
-        bool run = true;
-        int count = 0;
-
-        // Initialise error and derivative (so frame 1 derivative is correct)
-        double array[cam.CAM_WIDTH];
-        cam.simplePixelsFromCamera(3, array, 120);
-        cam.getDerivative(cam.getError(array));
-
-        while (run) {
-            followLine();
-
-            count ++;
-            if (count > 100) run = false;
-        }
-    }
-
-    /**
-     * Quadrant 3
-     * Make sharp turns. Logic of direction selection.
-     */
-    void quadrant3() {}
-
-    /**
-     * Quadrant 4
-     * Come close to the colored cylinders and drive to the finish line
-     */
-    void quadrant4() {}
-
-private:
-    readCamera cam;
-    drive dri;
-    float Kp, Kd;  // Coefficients
-
-    /**
-     * Using proportional formula, follow the black
-     * line, keeping the error to a minimum
-     */
-    void followLine() {
-        double array[cam.CAM_WIDTH];
-        cam.simplePixelsFromCamera(3, array, 120);
-        double error = cam.getError(array);
-        double derivative = cam.getDerivative(error);
-
-        // Continuously move forwards, and turn according to proportional formula
-        dri.turn(int(Kp * error + Kd * derivative), 5);
-    }
-};
 
 /**
  * This class interprets data from the Raspberry Pi's camera and gives
@@ -252,7 +180,83 @@ private:
     int motor_camera;
 };
 
+class robot {
+public:
+    explicit robot(readCamera rc, drive dr) {
+        cam = rc;
+        dri = dr;
+
+        // TODO optimise values of Kp and Kd
+        // Start with Kp, increase slowly from 0 until robot starts swinging
+        // Then increase Kd until movement is smooth
+        Kp = 0;
+        Kd = 0;
+    }
+
+    /**
+     * Quadrant 1
+     * Open the gate by exchange with the server over WiFi
+     */
+    void quadrant1() {}
+
+    /**
+     * Quadrant 2
+     * Follow smooth wiggly line
+     */
+    void quadrant2() {
+        bool run = true;
+        int count = 0;
+
+        // Initialise error and derivative (so frame 1 derivative is correct)
+        double array[cam.CAM_WIDTH];
+        cam.simplePixelsFromCamera(3, array, 120);
+        cam.getDerivative(cam.getError(array));
+
+        while (run) {
+            followLine();
+
+            count ++;
+            if (count > 100) run = false;
+        }
+    }
+
+    /**
+     * Quadrant 3
+     * Make sharp turns. Logic of direction selection.
+     */
+    void quadrant3() {}
+
+    /**
+     * Quadrant 4
+     * Come close to the colored cylinders and drive to the finish line
+     */
+    void quadrant4() {}
+
+private:
+    readCamera cam;
+    drive dri;
+    float Kp, Kd;  // Coefficients
+
+    /**
+     * Using proportional formula, follow the black
+     * line, keeping the error to a minimum
+     */
+    void followLine() {
+        double array[cam.CAM_WIDTH];
+        cam.simplePixelsFromCamera(3, array, 120);
+        double error = cam.getError(array);
+        double derivative = cam.getDerivative(error);
+
+        // Continuously move forwards, and turn according to proportional formula
+        dri.turn(int(Kp * error + Kd * derivative), 5);
+    }
+};
+
+
+
+
 int main() {
+    int err;
     readCamera rc;
     drive dr;
     robot rb(rc, dr);
