@@ -3,7 +3,7 @@
 //
 
 #include "../include/readCamera.h"
-#include "../include/E101.h"
+#include "../E101/libtest/E101.h"
 
 readCamera::readCamera() {
     prevError = 0.0;

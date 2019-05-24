@@ -37,8 +37,8 @@ public:
     void quadrant4();
 
 private:
-    readCamera camera;
-    drive drive;
+    readCamera cam;
+    drive dr;
     float Kp, Kd;  // Coefficients
 
     /**
