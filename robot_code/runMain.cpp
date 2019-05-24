@@ -208,6 +208,7 @@ public:
      * Follow smooth wiggly line
      */
     void quadrant2() {
+
         bool run = true;
         int count = 0;
 
@@ -217,6 +218,7 @@ public:
         cam.getDerivative(cam.getError(array));
 
         while (run) {
+            printf("%d: %f \n", count, cam.getError(array));
             followLine();
 
             count ++;
