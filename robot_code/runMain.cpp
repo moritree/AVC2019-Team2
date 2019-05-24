@@ -7,6 +7,11 @@
 #include <cstdlib>
 #include <thread>
 #include <chrono>
+#include <string>
+#include <fstream>
+#include <cmath>
+#include <sys/time.h>
+#include <cassert>
 #include "E101/libtest/E101.h"
 #include "include/drive.h"
 
