@@ -15,10 +15,10 @@ drive::drive() {
     motor_camera = -1;  // port for the camera motor
 }
 
-void drive::turn(int turn, int forward_speed){
+void drive::turn(int turn, int fwd_speed){
     stop();
-    set_motor(motor_left, zero_speed + turn - forward_speed);
-    set_motor(motor_right, zero_speed + turn + forward_speed);
+    set_motor(motor_left, zero_speed + turn - fwd_speed);
+    set_motor(motor_right, zero_speed + turn + fwd_speed);
     hardware_exchange();
 }
 
@@ -36,19 +36,18 @@ void drive::lost(){
     forward(-5);
 }
 
-void drive::look_up(int time_millis) {
+void drive::look_up() {
     set_motor(motor_camera,10);
     hardware_exchange();
-    std::this_thread::sleep_for (std::chrono::milliseconds(time_millis));
+    std::this_thread::sleep_for (std::chrono::milliseconds(500));
     set_motor(motor_camera,0);
-    std::this_thread::sleep_for (std::chrono::milliseconds(time_millis));
+    hardware_exchange();
 }
 
-void drive::look_down(int time_millis) {
+void drive::look_down() {
     set_motor(motor_camera,-10);
     hardware_exchange();
-    std::this_thread::sleep_for (std::chrono::milliseconds(time_millis));
+    std::this_thread::sleep_for (std::chrono::milliseconds(500));
     set_motor(motor_camera,0);
     hardware_exchange();
-    std::this_thread::sleep_for (std::chrono::milliseconds(time_millis));
 }

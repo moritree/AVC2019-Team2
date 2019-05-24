@@ -8,44 +8,44 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug"/>
+				<Option working_dir="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug"/>
+				<Option working_dir="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug"/>
+				<Option working_dir="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="runTests">
-				<Option output="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/runTests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug"/>
+				<Option output="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/runTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/include"/>
-					<Add directory="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/E101/libtest"/>
+					<Add directory="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/include"/>
+					<Add directory="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/E101/libtest"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
@@ -55,21 +55,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 runTests"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 runTests"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="runTests/fast">
-				<Option output="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/runTests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug"/>
+				<Option output="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/runTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/include"/>
-					<Add directory="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/E101/libtest"/>
+					<Add directory="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/include"/>
+					<Add directory="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/E101/libtest"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
@@ -79,21 +79,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 runTests/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 runTests/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="runMain">
-				<Option output="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/runMain" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug"/>
+				<Option output="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/runMain" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/include"/>
-					<Add directory="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/E101/libtest"/>
+					<Add directory="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/include"/>
+					<Add directory="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/E101/libtest"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
@@ -103,21 +103,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 runMain"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 runMain"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="runMain/fast">
-				<Option output="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/runMain" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug"/>
+				<Option output="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/runMain" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/include"/>
-					<Add directory="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/E101/libtest"/>
+					<Add directory="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/include"/>
+					<Add directory="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/E101/libtest"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
@@ -127,36 +127,36 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 runMain/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 runMain/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/exec/runMain.cpp">
+		<Unit filename="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/exec/runMain.cpp">
 			<Option target="runMain"/>
 		</Unit>
-		<Unit filename="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/exec/runTests.cpp">
+		<Unit filename="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/exec/runTests.cpp">
 			<Option target="runTests"/>
 		</Unit>
-		<Unit filename="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/drive.cpp">
-			<Option target="runTests"/>
-			<Option target="runMain"/>
-		</Unit>
-		<Unit filename="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/readCamera.cpp">
+		<Unit filename="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/src/drive.cpp">
 			<Option target="runTests"/>
 			<Option target="runMain"/>
 		</Unit>
-		<Unit filename="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/robot.cpp">
+		<Unit filename="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/src/readCamera.cpp">
 			<Option target="runTests"/>
 			<Option target="runMain"/>
 		</Unit>
-		<Unit filename="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/src/testCamera.cpp">
+		<Unit filename="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/src/robot.cpp">
 			<Option target="runTests"/>
 			<Option target="runMain"/>
 		</Unit>
-		<Unit filename="/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/CMakeLists.txt">
+		<Unit filename="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/src/testCamera.cpp">
+			<Option target="runTests"/>
+			<Option target="runMain"/>
+		</Unit>
+		<Unit filename="/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -8,5 +8,6 @@ add_executable(runMain exec/runMain.cpp ${SOURCES})
 add_executable(runTests exec/runTests.cpp ${SOURCES})
 include_directories(include E101/libtest)
 
-find_library(LIB101 e101 E101)
-target_link_libraries(runTests LINK_PUBLIC ${LIB101})
+find_library(LIBRARY e101 E101)
+target_link_libraries(runTests LINK_PUBLIC ${LIBRARY})
+target_link_libraries(runMain LINK_PUBLIC ${LIBRARY})

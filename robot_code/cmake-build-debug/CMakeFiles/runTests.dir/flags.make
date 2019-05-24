@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/include -I/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/E101/libtest 
+CXX_INCLUDES = -I/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/include -I/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/E101/libtest 
 

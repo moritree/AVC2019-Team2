@@ -1,4 +1,4 @@
-"/Users/zuni/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code
+"/Users/zuni/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug
+-- Build files have been written to: /Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug

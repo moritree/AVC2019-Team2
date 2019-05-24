@@ -41,6 +41,8 @@ public:
      */
     void pixelsFromCamera(int channel, double *array);
 
+    void simplePixelsFromCamera(int channel, double *array, int row);
+
     /**
      * Gets the time derivative of the error. Automatically keeps track of previous
      * error and time in private fields, so the only parameter is the error which has

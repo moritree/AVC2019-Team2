@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zuni/Documents/engr101/AVC2019-Team2/robot_code
+# Install script for directory: /Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/zuni/Documents/engr101/AVC2019-Team2/robot_code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/zuni/Documents/engr101/engr101_proj3/AVC2019-Team2/robot_code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -3,6 +3,8 @@
 //
 
 #include "robot.h"
+#include "readCamera.h"
+#include "drive.h"
 
 robot::robot(readCamera rc, class drive dr) {
     camera = rc;
@@ -23,7 +25,7 @@ void robot::quadrant2() {
 
     // Initialise error and derivative (so frame 1 derivative is correct)
     double array[camera.CAM_WIDTH];
-    camera.pixelsFromCamera(3, array);
+    camera.simplePixelsFromCamera(3, array, 120);
     camera.getDerivative(camera.getError(array));
 
     while (run) {
@@ -41,7 +43,7 @@ void robot::quadrant4() {}
 void robot::followLine() {
     // Get current error and derivative
     double array[camera.CAM_WIDTH];
-    camera.pixelsFromCamera(3, array);
+    camera.simplePixelsFromCamera(3, array, 120);
     double error = camera.getError(array);
     double derivative = camera.getDerivative(error);
 

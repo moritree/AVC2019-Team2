@@ -14,8 +14,9 @@ public:
     void forward(int speed);
     void stop();
     void lost();
-    void look_up(int time);
-    void look_down(int time);
+    void look_up();
+    void look_down();
+
 private:
     int max_speed;
     int zero_speed;
