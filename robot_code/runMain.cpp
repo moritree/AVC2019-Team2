@@ -139,7 +139,7 @@ public:
         motor_camera = -1;  // port for the camera motor
     }
 
-    void turn(int turn, int forward_speed) {
+    void turn(int turn, int fwd_speed) {
         stop();
         set_motor(motor_left, zero_speed + turn - fwd_speed);
         set_motor(motor_right, zero_speed + turn + fwd_speed);
