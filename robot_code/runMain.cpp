@@ -262,7 +262,7 @@ private:
 
 
 int main() {
-    int err;
+    int err = init(0);
     readCamera rc;
     drive dr;
     robot rb(rc, dr);
