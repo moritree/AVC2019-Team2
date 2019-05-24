@@ -13,6 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fddfe06e-f1ad-4896-9471-39fe4d51895e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/runMain.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -37,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/runMain.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="269" column="4" selection-start-line="269" selection-start-column="4" selection-end-line="269" selection-end-column="4" />
+            <state relative-caret-position="487">
+              <caret line="262" column="15" selection-start-line="262" selection-start-column="15" selection-end-line="262" selection-end-column="15" />
               <folding>
                 <element signature="e#48#67#0" expanded="true" />
                 <element signature="e#226#3882#1" />
@@ -172,12 +173,12 @@
       <workItem from="1558404714667" duration="4301000" />
       <workItem from="1558410117225" duration="87000" />
       <workItem from="1558410254784" duration="14423000" />
-      <workItem from="1558661491353" duration="6751000" />
+      <workItem from="1558661491353" duration="6996000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25562000" />
+    <option name="totallyTimeSpent" value="25807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -344,8 +345,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/runMain.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="269" column="4" selection-start-line="269" selection-start-column="4" selection-end-line="269" selection-end-column="4" />
+        <state relative-caret-position="487">
+          <caret line="262" column="15" selection-start-line="262" selection-start-column="15" selection-end-line="262" selection-end-column="15" />
           <folding>
             <element signature="e#48#67#0" expanded="true" />
             <element signature="e#226#3882#1" />

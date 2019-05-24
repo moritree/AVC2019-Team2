@@ -50,7 +50,7 @@ public:
 			// printf("%f * %f \n", array[i], error_array[i]);
 			double tmp_x = array[i];
 			double tmp_y = error_array[i];
-			double tmp_z = tmp_x * tmp_y;
+			double tmp_z = (tmp_x * tmp_y) / 159.5;
 			printf("%f ", tmp_z);
             ttt = ttt + tmp_z;
             printf("%f ", sum);
@@ -96,14 +96,11 @@ public:
             // Add together this channel's values for every pixel in the middle column
             if (channel == 3) {
                 // Whiteness channel needs no change
-                array[i] += get_pixel(row, i, channel);
+                array[i] += get_pixel(row, i, channel) / 255.0;
             } else {
                 // Colour ratio for the selected channel
                 array[i] += get_pixel(row, i, channel) / (float)get_pixel(row, i, 3);
             }
-
-            // Restrict to range of 0 to 1
-            array[i] *= 1.0/255.0;
         }
     }
 

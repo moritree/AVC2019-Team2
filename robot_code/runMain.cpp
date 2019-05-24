@@ -260,14 +260,14 @@ private:
 
 int main() {
     int err;
-    err = init(0);
+    err = init();
     readCamera rc;
     drive dr;
     robot rb(rc, dr);
 
     open_screen_stream();
     rb.quadrant2();
-    
+
     printf("Err: %d\n", err);
     return 0;
 }
