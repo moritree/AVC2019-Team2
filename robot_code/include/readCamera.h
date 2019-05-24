@@ -24,12 +24,12 @@ public:
     explicit readCamera();
 
     /**
-     * Gives the error e of a specific colour channel, where e=0
-     * when the image is horizontally symmetrical.
-     * @param picture array of CAM_WIDTH
+     * Calculates the error e, where e = 0 if the “center
+     * of mass” of the array is in the center index.
+     * @param array Array of CAM_WIDTH
      * @return e sum between -1 and 1
      */
-    double getError(double* picture);
+    double getError(double* array);
 
     /**
      * Writes from camera input into 1-dimensional array for finding the error values.
@@ -49,6 +49,7 @@ public:
      * @return Time derivative of e, de/dt
      */
     double getDerivative(double error);
+
 private:
     double prevError;
     struct timeval thisTime, prevTime;

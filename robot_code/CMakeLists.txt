@@ -4,7 +4,8 @@ project(robot_code)
 set(CMAKE_CXX_STANDARD 14)
 file(GLOB SOURCES "src/*.cpp")
 
-add_executable(runTests runTests.cpp ${SOURCES})
+add_executable(runMain exec/runMain.cpp ${SOURCES})
+add_executable(runTests exec/runTests.cpp ${SOURCES})
 include_directories(include E101/libtest)
 
 find_library(LIB101 e101 E101)

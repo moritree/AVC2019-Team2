@@ -123,32 +123,72 @@ runTests/fast:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
 .PHONY : runTests/fast
 
-runTests.o: runTests.cpp.o
+#=============================================================================
+# Target rules for targets named runMain
 
-.PHONY : runTests.o
+# Build rule for target.
+runMain: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 runMain
+.PHONY : runMain
+
+# fast build rule for target.
+runMain/fast:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/build
+.PHONY : runMain/fast
+
+exec/runMain.o: exec/runMain.cpp.o
+
+.PHONY : exec/runMain.o
 
 # target to build an object file
-runTests.cpp.o:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/runTests.cpp.o
-.PHONY : runTests.cpp.o
+exec/runMain.cpp.o:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/exec/runMain.cpp.o
+.PHONY : exec/runMain.cpp.o
 
-runTests.i: runTests.cpp.i
+exec/runMain.i: exec/runMain.cpp.i
 
-.PHONY : runTests.i
+.PHONY : exec/runMain.i
 
 # target to preprocess a source file
-runTests.cpp.i:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/runTests.cpp.i
-.PHONY : runTests.cpp.i
+exec/runMain.cpp.i:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/exec/runMain.cpp.i
+.PHONY : exec/runMain.cpp.i
 
-runTests.s: runTests.cpp.s
+exec/runMain.s: exec/runMain.cpp.s
 
-.PHONY : runTests.s
+.PHONY : exec/runMain.s
 
 # target to generate assembly for a file
-runTests.cpp.s:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/runTests.cpp.s
-.PHONY : runTests.cpp.s
+exec/runMain.cpp.s:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/exec/runMain.cpp.s
+.PHONY : exec/runMain.cpp.s
+
+exec/runTests.o: exec/runTests.cpp.o
+
+.PHONY : exec/runTests.o
+
+# target to build an object file
+exec/runTests.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/exec/runTests.cpp.o
+.PHONY : exec/runTests.cpp.o
+
+exec/runTests.i: exec/runTests.cpp.i
+
+.PHONY : exec/runTests.i
+
+# target to preprocess a source file
+exec/runTests.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/exec/runTests.cpp.i
+.PHONY : exec/runTests.cpp.i
+
+exec/runTests.s: exec/runTests.cpp.s
+
+.PHONY : exec/runTests.s
+
+# target to generate assembly for a file
+exec/runTests.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/exec/runTests.cpp.s
+.PHONY : exec/runTests.cpp.s
 
 src/drive.o: src/drive.cpp.o
 
@@ -157,6 +197,7 @@ src/drive.o: src/drive.cpp.o
 # target to build an object file
 src/drive.cpp.o:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/drive.cpp.o
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/drive.cpp.o
 .PHONY : src/drive.cpp.o
 
 src/drive.i: src/drive.cpp.i
@@ -166,6 +207,7 @@ src/drive.i: src/drive.cpp.i
 # target to preprocess a source file
 src/drive.cpp.i:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/drive.cpp.i
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/drive.cpp.i
 .PHONY : src/drive.cpp.i
 
 src/drive.s: src/drive.cpp.s
@@ -175,6 +217,7 @@ src/drive.s: src/drive.cpp.s
 # target to generate assembly for a file
 src/drive.cpp.s:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/drive.cpp.s
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/drive.cpp.s
 .PHONY : src/drive.cpp.s
 
 src/readCamera.o: src/readCamera.cpp.o
@@ -184,6 +227,7 @@ src/readCamera.o: src/readCamera.cpp.o
 # target to build an object file
 src/readCamera.cpp.o:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/readCamera.cpp.o
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/readCamera.cpp.o
 .PHONY : src/readCamera.cpp.o
 
 src/readCamera.i: src/readCamera.cpp.i
@@ -193,6 +237,7 @@ src/readCamera.i: src/readCamera.cpp.i
 # target to preprocess a source file
 src/readCamera.cpp.i:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/readCamera.cpp.i
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/readCamera.cpp.i
 .PHONY : src/readCamera.cpp.i
 
 src/readCamera.s: src/readCamera.cpp.s
@@ -202,7 +247,38 @@ src/readCamera.s: src/readCamera.cpp.s
 # target to generate assembly for a file
 src/readCamera.cpp.s:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/readCamera.cpp.s
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/readCamera.cpp.s
 .PHONY : src/readCamera.cpp.s
+
+src/robot.o: src/robot.cpp.o
+
+.PHONY : src/robot.o
+
+# target to build an object file
+src/robot.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/robot.cpp.o
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/robot.cpp.o
+.PHONY : src/robot.cpp.o
+
+src/robot.i: src/robot.cpp.i
+
+.PHONY : src/robot.i
+
+# target to preprocess a source file
+src/robot.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/robot.cpp.i
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/robot.cpp.i
+.PHONY : src/robot.cpp.i
+
+src/robot.s: src/robot.cpp.s
+
+.PHONY : src/robot.s
+
+# target to generate assembly for a file
+src/robot.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/robot.cpp.s
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/robot.cpp.s
+.PHONY : src/robot.cpp.s
 
 src/testCamera.o: src/testCamera.cpp.o
 
@@ -211,6 +287,7 @@ src/testCamera.o: src/testCamera.cpp.o
 # target to build an object file
 src/testCamera.cpp.o:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/testCamera.cpp.o
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/testCamera.cpp.o
 .PHONY : src/testCamera.cpp.o
 
 src/testCamera.i: src/testCamera.cpp.i
@@ -220,6 +297,7 @@ src/testCamera.i: src/testCamera.cpp.i
 # target to preprocess a source file
 src/testCamera.cpp.i:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/testCamera.cpp.i
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/testCamera.cpp.i
 .PHONY : src/testCamera.cpp.i
 
 src/testCamera.s: src/testCamera.cpp.s
@@ -229,6 +307,7 @@ src/testCamera.s: src/testCamera.cpp.s
 # target to generate assembly for a file
 src/testCamera.cpp.s:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/testCamera.cpp.s
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/testCamera.cpp.s
 .PHONY : src/testCamera.cpp.s
 
 # Help Target
@@ -240,15 +319,22 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... runTests"
-	@echo "... runTests.o"
-	@echo "... runTests.i"
-	@echo "... runTests.s"
+	@echo "... runMain"
+	@echo "... exec/runMain.o"
+	@echo "... exec/runMain.i"
+	@echo "... exec/runMain.s"
+	@echo "... exec/runTests.o"
+	@echo "... exec/runTests.i"
+	@echo "... exec/runTests.s"
 	@echo "... src/drive.o"
 	@echo "... src/drive.i"
 	@echo "... src/drive.s"
 	@echo "... src/readCamera.o"
 	@echo "... src/readCamera.i"
 	@echo "... src/readCamera.s"
+	@echo "... src/robot.o"
+	@echo "... src/robot.i"
+	@echo "... src/robot.s"
 	@echo "... src/testCamera.o"
 	@echo "... src/testCamera.i"
 	@echo "... src/testCamera.s"

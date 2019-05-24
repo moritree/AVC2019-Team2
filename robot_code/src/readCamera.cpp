@@ -10,9 +10,10 @@ readCamera::readCamera() {
     gettimeofday(&prevTime, nullptr);
     CAM_WIDTH = 320;
     CAM_HEIGHT = 240;
+    open_screen_stream();
 }
 
-double readCamera::getError(double *picture) {
+double readCamera::getError(double *array) {
     // Generate error array
     double error_array [CAM_WIDTH];
     for(int i = 0; i < CAM_WIDTH; i ++) {
@@ -23,7 +24,7 @@ double readCamera::getError(double *picture) {
     // Sum error array and picture array
     double sum = 0;
     for(int i = 0; i < CAM_WIDTH; i ++) {
-        sum += picture[i] * error_array[i];
+        sum += array[i] * error_array[i];
     }
     return sum / 12800;
 }

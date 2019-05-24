@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/runTests.dir/runTests.cpp.o"
+  "CMakeFiles/runTests.dir/exec/runTests.cpp.o"
   "CMakeFiles/runTests.dir/src/drive.cpp.o"
   "CMakeFiles/runTests.dir/src/readCamera.cpp.o"
+  "CMakeFiles/runTests.dir/src/robot.cpp.o"
   "CMakeFiles/runTests.dir/src/testCamera.cpp.o"
   "runTests.pdb"
   "runTests"
