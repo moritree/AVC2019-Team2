@@ -196,8 +196,8 @@ public:
         // TODO optimise values of Kp and Kd
         // Start with Kp, increase slowly from 0 until robot starts swinging
         // Then increase Kd until movement is smooth
-        Kp = 40;
-        Kd = 5;
+        Kp = 20;
+        Kd = 3;
     }
 
     /**
@@ -245,10 +245,10 @@ public:
 
         while (run) {
 			followLine(array);
-			std::this_thread::sleep_for(std::chrono::milliseconds(50));
+			std::this_thread::sleep_for(std::chrono::milliseconds(100));
 
             count ++;
-            if (count >= 300) run = false;
+            if (count >= 150) run = false;
         }
     }
 
@@ -279,7 +279,7 @@ private:
         double derivative = cam.getDerivative(error);
 		
         // Continuously move forwards, and turn according to proportional formula
-        if (cam.isLine(array, 60)) dri.turn(int(Kp * error + Kd * derivative), 5);
+        if (cam.isLine(array, 10)) dri.turn(int(Kp * error + Kd * derivative), 3);
         else  {
 	    printf("LOST\n");
             dri.lost();
