@@ -59,13 +59,13 @@ public:
      * @param channel R (0), G (1), B (2), or all (3)
      * @param array Array to write into
      */
-    void pixelsFromCamera(int channel, double *array) {
+    void pixelsFromCamera(int channel, double *array, int exclude_x) {
         // Check that the channel is valid
         assert(channel >= 0 && channel <= 3);
 		double min = 255;
         take_picture();
-
-        for (int i = 0; i < CAM_WIDTH; i ++) {
+	
+        for (int i = int(exclude_x / 2); i < CAM_WIDTH - (exclude_x / 2); i ++) {
             // Add together this channel's values for every
             // pixel in this column
             for (int j = 0; j < CAM_HEIGHT; j ++) {
@@ -85,12 +85,13 @@ public:
         }
     }
 
-    void simplePixelsFromCamera(int channel, double *array, int row) {
+    void simplePixelsFromCamera(int channel, double *array, int row, int thresh) {
         take_picture();
 
         for (int i = 0; i < CAM_WIDTH; i ++) {
+	    array[i] = 0;
             // Add together this channel's values for every pixel in the middle column
-            if (channel == 3) {
+            if (channel == 3 && get_pixel(row, i, channel) <= thresh) {
                 // Whiteness channel needs no change
                 array[i] = get_pixel(row, i, channel) /255.0;
             } else {
@@ -98,6 +99,13 @@ public:
                 array[i] = get_pixel(row, i, channel) / (float)get_pixel(row, i, 3);
             }
         }
+    }
+
+    bool isLine(double *array, int threshold) {
+        for (int i = 0; i < CAM_WIDTH; i ++) {
+            if (array[i] <= threshold) return true;
+        }
+        return false;
     }
 
     /**
@@ -126,7 +134,7 @@ private:
 class drive {
 public:
     explicit  drive() {
-        zero_speed = 48;
+        zero_speed = 47;
         max_speed = 17;
 
         motor_left = 5;     // port for left motor
@@ -188,8 +196,8 @@ public:
         // TODO optimise values of Kp and Kd
         // Start with Kp, increase slowly from 0 until robot starts swinging
         // Then increase Kd until movement is smooth
-        Kp = 50;
-        Kd = 0;
+        Kp = 40;
+        Kd = 5;
     }
 
     /**
@@ -232,7 +240,7 @@ public:
 
         // Initialise error and derivative (so frame 1 derivative is correct)
         double array[cam.CAM_WIDTH];
-        cam.simplePixelsFromCamera(3, array, 120);
+        cam.simplePixelsFromCamera(3, array, 230, 80);
         cam.getDerivative(cam.getError(array));
 
         while (run) {
@@ -240,7 +248,7 @@ public:
 			std::this_thread::sleep_for(std::chrono::milliseconds(50));
 
             count ++;
-            if (count >= 100) run = false;
+            if (count >= 300) run = false;
         }
     }
 
@@ -266,12 +274,16 @@ private:
      * line, keeping the error to a minimum
      */
     void followLine(double *array) {
-        cam.pixelsFromCamera(3, array);
+        cam.simplePixelsFromCamera(3, array, 230, 70);
         double error = cam.getError(array);
         double derivative = cam.getDerivative(error);
 		
         // Continuously move forwards, and turn according to proportional formula
-        dri.turn(int(Kp * error + Kd * derivative), 5);
+        if (cam.isLine(array, 60)) dri.turn(int(Kp * error + Kd * derivative), 5);
+        else  {
+	    printf("LOST\n");
+            dri.lost();
+        }
         printf("Error: %.4f %.2f Deriv: %.4f %.2f\n", error, Kp * error, derivative, Kd * derivative);
     }
 };
@@ -290,6 +302,7 @@ int main() {
 
 	//dr.forward(10);
 	//std::this_thread::sleep_for (std::chrono::milliseconds(5000));
+    rb.quadrant1();
     rb.quadrant2();
     dr.stop();
     
