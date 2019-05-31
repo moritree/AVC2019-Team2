@@ -265,12 +265,12 @@ public:
         cam.getDerivative(cam.getError(array));
         int count = 0;
         
-        while (cam.isLine(array, 0.2) && count < 200) {
+        while (cam.isLine(array, 0.3) && count < 200) {
             followLine(array, 2);
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            std::this_thread::sleep_for(std::chrono::milliseconds(200));
         }
         printf("END LINE\n");
-        while (!cam.isLine(array, 0.2)) {
+        while (!cam.isLine(array, 0.1)) {
             dri.turn(5, -3);
         }
         quadrant3();
