@@ -269,7 +269,7 @@ public:
             std::this_thread::sleep_for(std::chrono::milliseconds(100));
         }
         while (!cam.isLine(array, 10)) {
-            dri.turn(-5, -1)
+            dri.turn(-5, -1);
         }
         quadrant3();
     }
