@@ -104,7 +104,6 @@ public:
     bool isLine(double *array, double threshold) {
         int count = 0;
         for (int i = 0; i < CAM_WIDTH; i ++) {
-            printf("%f ", array[i]);
             if (array[i] < threshold) count ++;
         }
         return (count > 1);
@@ -272,7 +271,7 @@ public:
         }
         printf("END LINE\n");
         while (!cam.isLine(array, 0.2)) {
-            dri.turn(-5, -1);
+            dri.turn(5, -3);
         }
         quadrant3();
     }
