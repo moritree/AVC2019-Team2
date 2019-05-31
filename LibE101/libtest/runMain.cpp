@@ -270,10 +270,10 @@ public:
             std::this_thread::sleep_for(std::chrono::milliseconds(100));
         }
         printf("END LINE\n");
-        while (!cam.isLine(array, 10)) {
-            dri.turn(-5, -1);
-        }
-        quadrant3();
+//        while (!cam.isLine(array, 10)) {
+//            dri.turn(-5, -1);
+//        }
+        // quadrant3();
     }
 
     /**
