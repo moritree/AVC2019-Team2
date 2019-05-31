@@ -104,6 +104,7 @@ public:
     bool isLine(double *array, int threshold) {
         int count = 0;
         for (int i = 0; i < CAM_WIDTH; i ++) {
+            printf("%f ", array[i]);
             if (array[i] > threshold) count ++;
         }
         return (count > 1);
