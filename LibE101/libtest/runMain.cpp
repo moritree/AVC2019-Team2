@@ -101,11 +101,11 @@ public:
         }
     }
 
-    bool isLine(double *array, int threshold) {
+    bool isLine(double *array, double threshold) {
         int count = 0;
         for (int i = 0; i < CAM_WIDTH; i ++) {
             printf("%f ", array[i]);
-            if (array[i] > threshold) count ++;
+            if (array[i] < threshold) count ++;
         }
         return (count > 1);
     }
@@ -266,7 +266,7 @@ public:
         cam.getDerivative(cam.getError(array));
         int count = 0;
         
-        while (cam.isLine(array, 80) && count < 200) {
+        while (cam.isLine(array, 0.2) && count < 200) {
             followLine(array, 2);
             std::this_thread::sleep_for(std::chrono::milliseconds(100));
         }
@@ -298,7 +298,7 @@ private:
         double derivative = cam.getDerivative(error);
 		
         // Continuously move forwards, and turn according to proportional formula
-        if (cam.isLine(array, 80)) dri.turn(int(Kp * error + Kd * derivative), drive);
+        if (cam.isLine(array, 0.2)) dri.turn(int(Kp * error + Kd * derivative), drive);
         else  {
 	    printf("LOST\n");
             dri.lost();
