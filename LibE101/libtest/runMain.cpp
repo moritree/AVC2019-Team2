@@ -272,7 +272,7 @@ public:
         printf("END LINE\n");
         while (!cam.isLine(array, 0.3)) {
             cam.simplePixelsFromCamera(3, array, 230, 70);
-            dri.turn(3, 1);
+            dri.turn(1, 1);
             std::this_thread::sleep_for(std::chrono::milliseconds(600));
             printf("turn\n");
         }
