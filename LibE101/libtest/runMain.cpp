@@ -245,9 +245,15 @@ public:
         cam.getDerivative(cam.getError(array));
 
         while (run) {
-			followLine(array, 3);
+            if (cam.isLine(array, 0.2)) followLine(array, 3) {
+                else  {
+                printf("LOST\n");
+                    dri.lost();
+                }
+            }
 			std::this_thread::sleep_for(std::chrono::milliseconds(100));
 
+            
             count ++;
             if (count >= 150) run = false;
             // TODO check for red
@@ -272,7 +278,7 @@ public:
         printf("END LINE\n");
         while (!cam.isLine(array, 0.3)) {
             cam.simplePixelsFromCamera(3, array, 230, 70);
-            dri.turn(1, 1);
+            dri.turn(2, 1);
             std::this_thread::sleep_for(std::chrono::milliseconds(600));
             printf("turn\n");
         }
@@ -300,11 +306,8 @@ private:
         double derivative = cam.getDerivative(error);
 		
         // Continuously move forwards, and turn according to proportional formula
-        if (cam.isLine(array, 0.2)) dri.turn(int(Kp * error + Kd * derivative), drive);
-//        else  {
-//        printf("LOST\n");
-//            dri.lost();
-//        }
+        dri.turn(int(Kp * error + Kd * derivative), drive);
+        
         printf("Error: %.4f %.2f Deriv: %.4f %.2f\n", error, Kp * error, derivative, Kd * derivative);
     }
 };
