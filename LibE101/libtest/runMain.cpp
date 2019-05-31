@@ -278,7 +278,7 @@ public:
         while (!cam.isLine(array, 0.3)) {
             cam.simplePixelsFromCamera(3, array, 230, 70);
             dri.turn(2, 0);
-            std::this_thread::sleep_for(std::chrono::milliseconds(300));
+            std::this_thread::sleep_for(std::chrono::milliseconds(600));
             printf("turn\n");
         }
         quadrant3();
