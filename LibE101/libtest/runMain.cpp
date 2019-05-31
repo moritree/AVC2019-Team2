@@ -265,7 +265,7 @@ public:
         cam.getDerivative(cam.getError(array));
         int count = 0;
         
-        while (cam.isLine(array, 10) && count < 200) {
+        while (cam.isLine(array, 80) && count < 200) {
             followLine(array, 2);
             std::this_thread::sleep_for(std::chrono::milliseconds(100));
         }
