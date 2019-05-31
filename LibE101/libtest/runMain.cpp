@@ -264,11 +264,11 @@ public:
         cam.simplePixelsFromCamera(3, array, 230, 80);
         cam.getDerivative(cam.getError(array));
         
-        while (cam.isLine) {
+        while (cam.isLine(array, 10)) {
             followLine(array);
             std::this_thread::sleep_for(std::chrono::milliseconds(100));
         }
-        while (!cam.isLine) {
+        while (!cam.isLine(array, 10)) {
             dri.turn(-5, -1)
         }
         quadrant3();
