@@ -102,10 +102,11 @@ public:
     }
 
     bool isLine(double *array, int threshold) {
+        int count = 0;
         for (int i = 0; i < CAM_WIDTH; i ++) {
-            if (array[i] <= threshold) return true;
+            if (array[i] <= threshold) count ++;
         }
-        return false;
+        return (count > 10);
     }
 
     /**
@@ -249,6 +250,7 @@ public:
 
             count ++;
             if (count >= 150) run = false;
+            // TODO check for red
         }
     }
 
@@ -256,7 +258,21 @@ public:
      * Quadrant 3
      * Make sharp turns. Logic of direction selection.
      */
-    void quadrant3() {}
+    void quadrant3() {
+        // Initialise error and derivative (so frame 1 derivative is correct)
+        double array[cam.CAM_WIDTH];
+        cam.simplePixelsFromCamera(3, array, 230, 80);
+        cam.getDerivative(cam.getError(array));
+        
+        while (isLine) {
+            followLine(array);
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        }
+        while (!isLine) {
+            dri.turn(-5, -1)
+        }
+        quadrant3()
+    }
 
     /**
      * Quadrant 4
@@ -302,8 +318,9 @@ int main() {
 
 	//dr.forward(10);
 	//std::this_thread::sleep_for (std::chrono::milliseconds(5000));
-    rb.quadrant1();
-    rb.quadrant2();
+    //rb.quadrant1();
+    //rb.quadrant2();
+    rb.quadrant3();
     dr.stop();
     
     printf("Done\n");
