@@ -106,7 +106,7 @@ public:
         for (int i = 0; i < CAM_WIDTH; i ++) {
             if (array[i] <= threshold) count ++;
         }
-        return (count > 10);
+        return (count > 100);
     }
 
     /**
@@ -263,12 +263,13 @@ public:
         double array[cam.CAM_WIDTH];
         cam.simplePixelsFromCamera(3, array, 230, 80);
         cam.getDerivative(cam.getError(array));
+        int count = 0;
         
-        while (cam.isLine(array, 10)) {
+        while (cam.isLine(array, 5) && count < 200) {
             followLine(array);
             std::this_thread::sleep_for(std::chrono::milliseconds(100));
         }
-        while (!cam.isLine(array, 10)) {
+        while (!cam.isLine(array, 5)) {
             dri.turn(-5, -1);
         }
         quadrant3();
@@ -295,7 +296,7 @@ private:
         double derivative = cam.getDerivative(error);
 		
         // Continuously move forwards, and turn according to proportional formula
-        if (cam.isLine(array, 10)) dri.turn(int(Kp * error + Kd * derivative), 3);
+        if (cam.isLine(array, 5)) dri.turn(int(Kp * error + Kd * derivative), 3);
         else  {
 	    printf("LOST\n");
             dri.lost();
