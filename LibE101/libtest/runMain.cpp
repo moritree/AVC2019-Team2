@@ -271,7 +271,7 @@ public:
         int count = 0;
         
         while (cam.isLine(array, 0.3) && count < 200) {
-            followLine(array, 2, 0.01);
+            followLine(array, 2, -0.05);
             std::this_thread::sleep_for(std::chrono::milliseconds(200));
         }
         printf("END LINE\n");
