@@ -245,7 +245,7 @@ public:
         cam.getDerivative(cam.getError(array));
 
         while (run) {
-            if (cam.isLine(array, 0.2)) { followLine(array, 3); }
+            if (cam.isLine(array, 0.2)) { followLine(array, 3, 0); }
             else  {
             printf("LOST\n");
                 dri.lost();
@@ -271,7 +271,7 @@ public:
         int count = 0;
         
         while (cam.isLine(array, 0.3) && count < 200) {
-            followLine(array, 2);
+            followLine(array, 2, -0.01);
             std::this_thread::sleep_for(std::chrono::milliseconds(200));
         }
         printf("END LINE\n");
@@ -299,9 +299,9 @@ private:
      * Using proportional formula, follow the black
      * line, keeping the error to a minimum
      */
-    void followLine(double *array, int drive) {
+    void followLine(double *array, int drive, double preferror) {
         cam.simplePixelsFromCamera(3, array, 230, 70);
-        double error = cam.getError(array);
+        double error = cam.getError(array) + preferror;
         double derivative = cam.getDerivative(error);
 		
         // Continuously move forwards, and turn according to proportional formula
