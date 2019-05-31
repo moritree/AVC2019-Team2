@@ -301,10 +301,10 @@ private:
 		
         // Continuously move forwards, and turn according to proportional formula
         if (cam.isLine(array, 0.2)) dri.turn(int(Kp * error + Kd * derivative), drive);
-        else  {
-	    printf("LOST\n");
-            dri.lost();
-        }
+//        else  {
+//        printf("LOST\n");
+//            dri.lost();
+//        }
         printf("Error: %.4f %.2f Deriv: %.4f %.2f\n", error, Kp * error, derivative, Kd * derivative);
     }
 };
