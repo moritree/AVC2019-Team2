@@ -272,6 +272,8 @@ public:
         printf("END LINE\n");
         while (!cam.isLine(array, 0.1)) {
             dri.turn(5, -3);
+            std::this_thread::sleep_for(std::chrono::milliseconds(200));
+            printf("turn\n");
         }
         quadrant3();
     }
