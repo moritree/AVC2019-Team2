@@ -245,7 +245,7 @@ public:
         cam.getDerivative(cam.getError(array));
 
         while (run) {
-            if (cam.isLine(array, 0.2)) { followLine(array, 3) }
+            if (cam.isLine(array, 0.2)) { followLine(array, 3); }
             else  {
             printf("LOST\n");
                 dri.lost();
