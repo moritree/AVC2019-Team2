@@ -271,6 +271,9 @@ public:
         int count = 0;
         
         while (cam.isLine(array, 0.3) && count < 200) {
+            cam.simplePixelsFromCamera(3, array, 230, 70);
+            double error = cam.getError(array) + preferror;
+            double derivative = cam.getDerivative(error);
             followLine(array, 2, -0.05);
             std::this_thread::sleep_for(std::chrono::milliseconds(200));
         }
